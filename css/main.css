@@ -1,0 +1,15 @@
+
+* {
+	box-sizing: border-box;
+}
+
+.nav-bar {
+	margin: 10px 10px;
+}
+
+.nav-list {
+	display: none;
+	list-style: none;
+	margin:auto auto;
+	text-align: center;
+}
