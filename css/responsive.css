@@ -1,0 +1,50 @@
+
+@media screen and (max-width: 549px) {
+
+
+}
+
+@media (min-width: 550px) {
+
+
+
+}
+
+@media (min-width: 768px) {
+
+  #corner-logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 30px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-list {
+    display: inline-block;
+    float: right;
+    margin-right:10%;
+  }
+
+  .nav-item {
+    display: inline-block;
+    margin: 25px 20px;
+  }
+
+
+}
+
+@media (min-width: 992px) {
+
+  /*Updating header*/
+
+
+}
+
+@media (min-width: 1200px) {
+
+
+
+}
