@@ -5,6 +5,8 @@
     margin-top: 30px;
   }
 
+
+
 }
 
 @media (min-width: 550px) {
@@ -37,11 +39,28 @@
   }
 
 
+  .social-link-list li {
+    width:80px;
+  }
+
+  [class*="brandico-"]:before {
+    font-family: 'brandico', sans-serif;
+    font-size: 25px;
+  }
+
+
 }
 
 @media (min-width: 992px) {
 
-  /*Updating header*/
+  [class*="brandico-"]:before {
+    font-family: 'brandico', sans-serif;
+    font-size: 30px;
+  }
+
+  .social-link-list li {
+    width:100px;
+  }
 
 
 }

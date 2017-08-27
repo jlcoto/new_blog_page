@@ -1,3 +1,5 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
 
 * {
 	box-sizing: border-box;
@@ -51,5 +53,45 @@ a:visited {
 .logo-pic {
 	width: 100%;
 	z-index: 0;
+}
+
+/*Footer*/
+
+.footer-line {
+	width: 30%;
+	margin: 15px auto;
+	border-bottom: 1px solid #7d97ad;
+}
+
+.social-link-list {
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+}
+
+[class*="brandico-"]:before {
+	font-family: 'brandico', sans-serif;
+	font-size: 22px;
+}
+
+.social-link-list li {
+	display: inline-block;
+	width: 50px;
+	text-decoration: none;
+}
+
+.social-link-list li a {
+	color: #A4A4A4;
+	text-decoration: none;
+}
+
+.social-link-list li a:visited {
+	text-decoration: none;
+	color: #A4A4A4;
+}
+
+.social-link-list li a:hover {
+	text-decoration: none;
+	color: #5EB4CE;
 }
 
