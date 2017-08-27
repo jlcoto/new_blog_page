@@ -3,6 +3,9 @@
 	box-sizing: border-box;
 }
 
+
+/*Header*/
+
 .nav-bar {
 	margin: 10px 10px;
 }
@@ -37,6 +40,16 @@
 	color: #6B5F5F;
 }
 
+.nav-item a:hover {
+	color: #3791AC;
+}
+
 a:visited {
     text-decoration: none;
 }
+
+.logo-pic {
+	width: 100%;
+	z-index: 0;
+}
+
