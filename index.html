@@ -17,15 +17,16 @@ layout: default
 
         <li class="row post-container">
         <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
-			<div class="col-md-4 text-center post-image" {% if post.image %} style="background-image: url('{{ post.image }}');" {% endif %}>
+			<div class="col-md-4 post-image" {% if post.image %} style="background-image: url('{{ post.image }}');" {% endif %}>
 			</div>
-			<div class="col-md-8">
-        		<h2>
+			   <div class="col-md-8 ">
+        		<div class="post-text">
         		  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        		</h2>
-        		<div class="post_extract">
+
+        		<div class="post-extract">
         			{{ post.excerpt }}
         		</div>
+            </div>
         	</div>
       </li>
 

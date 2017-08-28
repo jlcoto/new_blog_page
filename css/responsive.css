@@ -15,6 +15,10 @@
 
 @media (min-width: 550px) {
 
+  .post-extract{
+    font-size: 16px;
+    line-height: 22px;
+}
 
 
 }
@@ -52,6 +56,20 @@
     font-size: 25px;
   }
 
+  .post-container{
+    padding: 24px 20px;
+  }
+
+  .post-list {
+    margin: 60px 0px;
+  }
+
+  /*Post content*/
+  .post-content{
+    font-size: 22px;
+    font-family: 'Droid Serif', serif;
+    line-height: 1.9;
+  }
 
 }
 
@@ -64,6 +82,11 @@
 
   .social-link-list li {
     width:100px;
+  }
+
+  .post-margins {
+    padding-left: 220px;
+    padding-right: 220px;
   }
 
 

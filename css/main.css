@@ -1,8 +1,9 @@
 @import url(http://weloveiconfonts.com/api/?family=brandico);
 
 
-* {
+body {
 	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
 }
 
 
@@ -57,9 +58,14 @@ a:visited {
 
 /*Showing post content*/
 
+.post-list {
+	margin: 30px 0px;
+}
+
 .post-container {
 	border: 1px solid rgba(164, 164, 164, 0.3);
 	margin: 30px 20px 30px -20px;
+	padding: 12px 20px;
 }
 
 .post-image {
@@ -70,6 +76,38 @@ a:visited {
 	background-size: contain;
   	background-position: center;
 }
+
+.post-link {
+	font-size: 20px;
+	font-style: italic;
+	color: #1DB9E9;
+	text-decoration: none;
+}
+
+.post-text {
+	margin-top: 14px;
+}
+
+.post-text a:hover {
+	text-decoration: none;
+	color: #00D9FF;
+}
+
+.post-extract{
+	margin-top: 7px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+/*Posts content*/
+
+.post-content{
+	font-size: 18px;
+	font-family: 'Droid Serif', serif;
+	line-height: 32px;
+	color: rgba(0,0,0, 0.6);
+}
+
 
 /*Footer*/
 
