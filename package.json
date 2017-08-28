@@ -1,0 +1,34 @@
+{
+  "name": "jose",
+  "version": "1.0.0",
+  "description": "pag web notaria",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^3.4.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-image-resize": "^0.12.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlcoto/front_end/tree/master/projects/web-performance"
+  },
+  "keywords": [
+    "optimization"
+  ],
+  "author": "jose coto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlcoto/front_end/tree/master/projects/web-performance"
+  },
+  "homepage": "https://github.com/jlcoto/front_end/tree/master/projects/web-performance"
+}

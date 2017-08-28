@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Pydata Berlin 2016"
+date:   2016-05-23 00:24:55 +0100
+category: Other
+image: /img-post/pydata-vert
+---
+
+I had an amazing time in my first time ever Pydata Berlin 2016. Got to know awesome people and very talented researchers. As always, with these events it is always difficult to choose which talk you want to attend to. There were hours where all three talks running in parallel were really interesting.
+
+No regrets, however. Each of the talks, even one attended by accident, were top notch. Out of personal preference, I really liked Nora Neumann's talk on using a Bayesian Framework for A/B testing. The talk went really detailed into the pitfalls of testing within a classic framework, and how Bayesian statistics can help us overcome them. You can check the abstract [here](http://pydata.org/berlin2016/schedule/presentation/17/).
+
+The keynotes had different flavors. It started with Olivier Grisel, who presented `dask`, a new library that provides parallelized computing features for `numpy` and `pandas` objects. You can learn more about the project [here](http://dask.pydata.org/en/latest/).
+
+Julia  Evans keynote was about the limits of machine learning. She exemplified her point by tricking a neuro-network. Personally, I found her skepticism refreshing and well directed. The hype with data science and machine learning has never been higher. However, we risk having it completely wrong if we think that our models are bullet proof. In essence, as Julia pointed out, nothing replaces a good grasp of the model's assumptions, going back to the math, and having a good understanding of the business model and your data. After that, you might also discover [how to trick state of the art models](http://jvns.ca/blog/2016/05/19/a-few-reasons-to-be-skeptical-of-machine-learning-results/). This is something akin to know the defects in order to know the strengths.
+
+The last keynote was from Wes McKinney, the creator of `pandas`. The talk was a mix of important topics. The one that resonated the most with me was how to make sure Python and their scientific libraries develop a welcoming and positive community. I don't think there's an easy solution for that. Personally, I think I should do more for the open source community. However, I also believe that conferences like this bring people together. I had the chance to meet a lot of nice people very open to sharing their knowledge and ideas over a coffee -- coffee is very important! :).  All in all, I have to say to the organizers job well done! Will be eagerly waiting for Pydata Berlin 2017.
+
+
+
