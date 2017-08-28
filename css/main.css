@@ -55,6 +55,22 @@ a:visited {
 	z-index: 0;
 }
 
+/*Showing post content*/
+
+.post-container {
+	border: 1px solid rgba(164, 164, 164, 0.3);
+	margin: 30px 20px 30px -20px;
+}
+
+.post-image {
+	height: 200px;
+	width: 200px;
+	margin: auto auto;
+	background-repeat: no-repeat;
+	background-size: contain;
+  	background-position: center;
+}
+
 /*Footer*/
 
 .footer-line {

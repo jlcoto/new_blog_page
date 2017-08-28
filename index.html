@@ -4,29 +4,34 @@ layout: default
 
 <div class="home">
 
+
 	<div class="central-pic">
 		<img class="logo-pic" src="img-layout/central_img-small.jpg" srcset="img-layout/central_img-extra-small.jpg 400w, img-layout/central_img-small.jpg 548w, img-layout/central_img-medium.jpg 768w, img-layout/central_img-large.jpg 992w,
 		img-layout/central_img-extra-large.jpg 1200w"
 		sizes="100vw"
 		alt="Central pic Jose Coto's web page">
 	</div>
-
+  <div class="container">
   <ul class="post-list">
     {% for post in site.posts %}
-        <li>
-        <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <div class="post_extract">
-        {{ post.excerpt }}
-        </div>
+        <li class="row post-container">
+        <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
+			<div class="col-md-4 text-center post-image" {% if post.image %} style="background-image: url('{{ post.image }}');" {% endif %}>
+			</div>
+			<div class="col-md-8">
+        		<h2>
+        		  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        		</h2>
+        		<div class="post_extract">
+        			{{ post.excerpt }}
+        		</div>
+        	</div>
       </li>
 
     {% endfor %}
   </ul>
-
+</div>
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>
