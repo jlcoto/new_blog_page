@@ -121,6 +121,19 @@ a:visited {
 
 /*Posts content*/
 
+.post-title {
+	color: rgba(18, 72, 88, 0.8);
+	font-size: 30px;
+	margin-bottom: 0px;
+}
+
+.post-meta {
+	color: #78A1AE;
+	font-size: 14px;
+	font-style: italic;
+	margin-top: 10px;
+}
+
 .post-content{
 	margin-top: 30px;
 	font-size: 18px;
