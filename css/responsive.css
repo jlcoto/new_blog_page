@@ -66,7 +66,7 @@
 
   /*Post content*/
   .post-content{
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Droid Serif', serif;
     line-height: 1.9;
   }
@@ -85,14 +85,18 @@
   }
 
   .post-margins {
-    padding-left: 220px;
-    padding-right: 220px;
+    padding-left: 12%;
+    padding-right: 12%;
   }
-
 
 }
 
 @media (min-width: 1200px) {
+
+  .post-margins {
+    padding-left: 16%;
+    padding-right: 16%;
+  }
 
 
 

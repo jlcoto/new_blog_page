@@ -29,7 +29,6 @@ body {
 	margin:auto auto;
 	text-align: center;
 	font-size: 20px;
-
 }
 
 .nav-item {
@@ -68,6 +67,22 @@ a:visited {
 	padding: 12px 20px;
 }
 
+.date-show-post{
+	font-size: 14px;
+	font-style: italic;
+	font-weight: lighter;
+	color: #6A8D8E;
+}
+
+.post-show-tags{
+	font-size: 12px;
+	color: #46BFE4;
+	margin-right: 5px;
+	padding: 4px 6px;
+	background-color: #F6F6F6;
+	border-radius: 8px;
+}
+
 .post-image {
 	height: 200px;
 	width: 200px;
@@ -95,13 +110,15 @@ a:visited {
 
 .post-extract{
 	margin-top: 7px;
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 15px;
+	line-height: 1.7;
+	color: rgba(0,0,0, 0.7);
 }
 
 /*Posts content*/
 
 .post-content{
+	margin-top: 30px;
 	font-size: 18px;
 	font-family: 'Droid Serif', serif;
 	line-height: 32px;
@@ -112,9 +129,9 @@ a:visited {
 /*Footer*/
 
 .footer-line {
-	width: 30%;
-	margin: 15px auto;
-	border-bottom: 1px solid #7d97ad;
+	width: 35%;
+	margin: 60px auto 20px auto;
+	border-bottom: 1.5px solid #5EB4CE;
 }
 
 .social-link-list {

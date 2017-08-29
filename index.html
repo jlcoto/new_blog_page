@@ -16,13 +16,15 @@ layout: default
     {% for post in site.posts %}
 
         <li class="row post-container">
+
         <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
 			<div class="col-md-4 post-image" {% if post.image %} style="background-image: url('{{ post.image }}');" {% endif %}>
 			</div>
 			   <div class="col-md-8 ">
         		<div class="post-text">
-        		  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 
+        		  <div><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+               {% for tag in post.tags %} <span class="post-show-tags"> {{ tag }} </span> {% endfor %}
         		<div class="post-extract">
         			{{ post.excerpt }}
         		</div>

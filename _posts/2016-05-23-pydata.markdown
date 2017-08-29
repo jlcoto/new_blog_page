@@ -3,6 +3,7 @@ layout: post
 title:  "Pydata Berlin 2016"
 date:   2016-05-23 00:24:55 +0100
 category: Other
+tags: [conferences]
 image: /img-post/pydata-vert-large.jpg
 ---
 
