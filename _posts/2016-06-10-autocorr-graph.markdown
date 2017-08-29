@@ -22,12 +22,12 @@ $$y_t = 0.8\varepsilon_{t-1}- 0.7\varepsilon_{t-2} +  0.5\varepsilon_{t-3} $$
 Simply put, this means that the next period will be heavily and positively influenced by what happens three periods before.
 
 <div class="row">
-	<img src="/img-post/MA3_process-large.jpg" alt="MA(3) process" class="enlarge-img img-position">
+	<img src="/img-post/MA3_process-large.jpg" class="enlarge-img img-position" alt="MA(3) Process">
 </div>
 In the graph, we should observe three significant spikes, corresponding to those first three periods.
 
 <div class="row">
-<img src="/img-post/autocorr-large.jpg" alt="Autocorrelation Plot" class="enlarge-img img-position">
+<img src="/img-post/autocorr-large.jpg" srcset="" alt="Autocorrelation Plot" class="enlarge-img img-position">
 </div>
 
 Feel free to play around with the code, extend it, and let me know what you think!

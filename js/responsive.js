@@ -18,8 +18,10 @@ $(window).on('resize', function(){
 
 $(function() {
     	$('.enlarge-img').on('click', function() {
-			$('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+    		var imageToModal = $(this).attr('src').split("large")[0] + "modal.jpg"
+			$('.enlargeImageModalSource').attr('src', imageToModal);
 			$('#enlargeImageModal').modal('show');
 			$('.modal-title').text($(this).attr('alt'))
+			$('.enlargeImageModalSource').attr('alt', $(this).attr('alt'));
 		});
 });
