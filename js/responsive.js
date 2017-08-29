@@ -13,3 +13,13 @@ $(window).on('resize', function(){
 		}
 	}
 )
+
+// Enlarging images with bootstrap modals
+
+$(function() {
+    	$('.enlarge-img').on('click', function() {
+			$('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+			$('#enlargeImageModal').modal('show');
+			$('.modal-title').text($(this).attr('alt'))
+		});
+});

@@ -126,6 +126,12 @@ a:visited {
 }
 
 
+/*Modal*/
+.modal-title{
+	margin: 0px auto;
+	color: #5EB4CF;
+}
+
 /*Footer*/
 
 .footer-line {
