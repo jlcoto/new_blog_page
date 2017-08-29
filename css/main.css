@@ -92,6 +92,10 @@ a:visited {
   	background-position: center;
 }
 
+.img-position {
+	margin: 0px auto;
+}
+
 .post-link {
 	font-size: 20px;
 	font-style: italic;
@@ -125,12 +129,17 @@ a:visited {
 	color: rgba(0,0,0, 0.6);
 }
 
+.enlarge-img {
+	cursor: pointer;
+}
+
 
 /*Modal*/
 .modal-title{
 	margin: 0px auto;
 	color: #5EB4CF;
 }
+
 
 /*Footer*/
 
