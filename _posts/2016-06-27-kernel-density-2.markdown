@@ -41,44 +41,106 @@ $$\hat{f} = \frac{1}{nh} \sum^n_{i=1}K  \left( \frac{x-x_i}{h} \right)$$
 
 where, $$h:$$ selected bandwidth, $$n:$$ total data points, $$K:$$ the specific kernel function selected, $$x:$$ point whose kernel density we want to find. As complex as it may seem, the formula is relatively straight forward. The main factor to understand is the expression within $$K$$. This expression is basically measuring the distance of our reference point x to the other data points and dividing it by our selected bandwidth. Knowing these distances will be important when assigning a score. Only the observation that are within the bandwidth will be given a score. Also, the farther the "neighbors" are from our reference point, the less score they will convey.
 
-There are [multiple choices for kernels](https://en.wikipedia.org/wiki/Kernel_(statistics)#Kernel_functions_in_common_use). I will use here the Epanechnikov. If we take $$u$$ to be the expression inside of the fraction, the Epanechnikov kernel assigns relevance to the points in the following way: $$\frac{3}{4}(1-u^2)I(\lvert u \leq 1 \rvert)$$. The $$I$$ is an indicator function that makes sure that only the points that are within the bandwidth get evaluated. The other part is a weighting rule, by which nearer points get a higher score.
+There are [multiple choices for kernels](https://en.wikipedia.org/wiki/Kernel_(statistics)#Kernel_functions_in_common_use). I will use here the Epanechnikov. If we take $$u$$ to be the expression inside of the fraction, the Epanechnikov kernel assigns relevance to the points in the following way: $\frac{3}{4}(1-u^2)I(\lvert u \leq 1 \rvert)$. The $$I$$ is an indicator function that makes sure that only the points that are within the bandwidth get evaluated. The other part is a weighting rule, by which nearer points get a higher score.
 
 Let me try to make this clear with a toy example. Let's say that we want to estimate kernel density function of a data point x=4 in two data sets. To make calculations simpler, I choose a bandwidth of one for both data sets.
 
 
 
+<div class="row">
+    <div class="col-1 table-letter">
+        A
+    </div>
+    <div class="col-11">
+        <table class="table table-striped">
+            <thead class="table-columns">
+                <th>Point $x=4$ </th>
+                <th>$I(\lvert u \leq 1 \rvert)$</th>
+                <th>$\frac{1}{nh}*\frac{3}{4}(1-u^2)$</th>
+            </thead>
+            <tbody class="table-content">
+            <tr>
+              <td>x = 2.9 </td>
+              <td>False ( = 0 ) </td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>x = 3.1 </td>
+              <td>True ( = 1 )   </td>
+              <td>0.0285</td>
+            </tr>
+            <tr>
+              <td>x = 4.9 </td>
+              <td>True ( = 1 )   </td>
+              <td>0.0285</td>
+            </tr>
+            <tr>
+              <td> x = 5.1   </td>
+              <td>False ( = 0 )   </td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>Total</td>
+              <td>0.057</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 
-<table class="table table-striped">
-    <thead>
-        <th>Point $$x=4$$ </th>
-        <th>$$I(\lvert u \leq 1 \rvert)$$</th>
-        <th>$$\frac{1}{nh}*\frac{3}{4}(1-u^2)$$</th>
-    </thead>
-</table>
 
-
-| Point $$x=4$$ | $$I(\lvert u \leq 1 \rvert)$$ | $$\frac{1}{nh}*\frac{3}{4}(1-u^2)$$ |
-| ------------- | :----------------------------:| ----------------------|
-| x = 2.9 		| False ( = 0 )					| 			0			 |
-| x = 3.1 		| True ( = 1 )					| 		0.0285			 |
-| x = 4.9 		| True ( = 1 )					| 		0.0285			 |
-| x = 5.1 		| False ( = 0 )					| 			0			 |
-| 				| 			**Total**			| 		**0.057**        |
-
-
-
-| Point $$x=4$$ | $$I(\lvert u \leq 1 \rvert)$$ | $$\frac{1}{nh}*\frac{3}{4}(1-u^2)$$ |
-| ------------- | :----------------------------:| ----------------------|
-| x = 2.9 		| False ( = 0 )					| 			0			 |
-| x = 3.1 		| True ( = 1 )					| 	    0.02     		 |
-| x = 3.9 		| True ( = 1 )					| 		0.106	     	 |
-| x = 4.1 		| True ( = 1 )					| 		0.106			 |
-| x = 4.9 		| True ( = 1 )					| 		0.02 			 |
-| x = 5.1 		| False ( = 0 )					| 			0			 |
-| 				| 			**Total**			| 	     **0.253**       |
-
-
-
+<div class="row">
+    <div class="col-1 table-letter">
+        B
+    </div>
+    <div class="col-11">
+        <table class="table table-striped">
+            <thead class="table-columns">
+                <th>Point $x=4$ </th>
+                <th>$I(\lvert u \leq 1 \rvert)$</th>
+                <th>$\frac{1}{nh}*\frac{3}{4}(1-u^2)$</th>
+            </thead>
+            <tbody class="table-content">
+            <tr>
+              <td>x = 2.9 </td>
+              <td>False ( = 0 ) </td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>x = 3.1 </td>
+              <td>True ( = 1 )   </td>
+              <td>0.02</td>
+            </tr>
+            <tr>
+              <td>x = 3.9 </td>
+              <td>True ( = 1 )   </td>
+              <td>0.106</td>
+            </tr>
+            <tr>
+              <td>x = 4.1 </td>
+              <td>True ( = 1 )   </td>
+              <td>0.106</td>
+            </tr>
+            <tr>
+              <td> x = 4.9   </td>
+              <td>True ( = 1 )   </td>
+              <td>0.02</td>
+            </tr>
+            <tr>
+              <td> x = 5.1   </td>
+              <td>False ( = 0 )   </td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td>Total</td>
+              <td>0.253</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 
 
 From the outset, note that only those points that are within the selected bandwidth will be estimated. The indicator function evaluates to zero for all points outside the selected window. Also, note how the weights change from one data set to the other. One can notice two important changes in the estimated weight values for data set A and B. The first one is regarding points $$x=3.1$$ and $$x=4.9$$. Even when they are at the same distance from the reference point in both data sets, in B they receive a lower weight. The explanation is simple. One can see in the formula that the weight of each point is multiplied by $$\frac{1}{nh}$$. Therefore, the bigger the number of the points in a certain data set, the lower this fraction will be. As the data set B has more points ($$n=7$$), the original contribution of these points is weighted down by this factor. The second and more important take away is given by the two new points introduced in B. Note that these are really close to 4. Therefore, according to the weighting scheme, this give a bigger weight to the point under evaluation.

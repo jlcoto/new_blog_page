@@ -146,6 +146,26 @@ a:visited {
 	cursor: pointer;
 }
 
+.table-letter {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	color: #5EB4CF;
+}
+
+.table-columns {
+	font-size: 12px;
+}
+.table-columns th {
+	text-align: center;
+}
+
+.table-content {
+	text-align: center;
+	font-size: 12px;
+}
+
+
 
 /*Modal*/
 .modal-title{
