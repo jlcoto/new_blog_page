@@ -150,13 +150,18 @@ a:visited {
 	margin-bottom: 20px;
 }
 
-.post-content h2 {
+.post-content h2, h3 {
 	font-family: 'Roboto', sans-serif;
 	color: rgba(18, 72, 88, 0.7);
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 26px;
 	margin: 30px 0px;
 }
+
+.post-content h3 {
+	font-size: 22px;
+}
+
 
 .enlarge-img {
 	cursor: pointer;
