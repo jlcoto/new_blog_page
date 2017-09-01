@@ -92,6 +92,10 @@ a:visited {
   	background-position: center;
 }
 
+.img-spacing {
+	margin: 40px 0px;
+}
+
 .img-position {
 	margin: 0px auto;
 }
