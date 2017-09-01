@@ -169,6 +169,18 @@ a:visited {
 	font-size: 12px;
 }
 
+.table-pipe {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: #5EB4CF;
+	margin: 20px 0px;
+}
+
+.arrow-down {
+	margin-left: 20px;
+}
+
 
 
 /*Modal*/

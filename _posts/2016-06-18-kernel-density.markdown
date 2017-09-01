@@ -15,7 +15,7 @@ Let's start by proposing a random variable with a given distribution. We will ta
 
 
 
-<div class="row">
+<div class="row img-spacing">
     <img src="/img-post/true_dist-large.jpg" class="enlarge-img img-position" alt="True Distribution">
 </div>
 
@@ -78,7 +78,7 @@ plt.title("Histogram")
 
 Here is the graph for a bin width of 0.25:
 
-<div class="row">
+<div class="row img-spacing">
     <img src="/img-post/histogram-large.jpg" class="enlarge-img img-position" alt="Histogram">
 </div>
 

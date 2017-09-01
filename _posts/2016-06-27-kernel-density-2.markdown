@@ -4,6 +4,7 @@ title:  "On histograms and kernel densities (II)"
 date:   2016-06-27 00:24:55 +0100
 category: Stats
 tags: [histogram, kernel density, matplotlib]
+image: /img-post/histogram-prob-large.jpg
 ---
 
 
@@ -28,7 +29,7 @@ This is where kernel densities come handy. While in histograms we sort data into
 Let's take the following figure for illustrating purposes. I have zoomed in frames A and B of the above figure.
 
 <div class="row img-spacing">
-    <img src="/img-post/frame-A-B-hist-wide-large.jpg" class="enlarge-img img-position" alt="Zoomed frames for kernel density">
+    <img src="/img-post/frame-A-B-hist-wide-large.jpg" class="enlarge-img img-position img-fluid" alt="Zoomed frames for kernel density">
 </div>
 
 From here we can see how different two points are, considering how many neighbors they have. Note how much distance we have to go over for our reference point (the one in light purple) to find another point. In the same distance that it takes our reference point to find the two closest points, B's reference point finds 15. These points are highlighted in a different shade of purple. Naturally, a proper kernel density should take this into account. More relevance, thus, should be given to reference point B. But exactly how much relevance should that be, and, furthermore, what is the appropriate distance to consider?
@@ -171,7 +172,7 @@ def kernel_output(num_array, bandwidth):
 I used this code to plot the kernel density of our standard normal distributed variable $$X$$ that we saw in the beginning of the post. In the graph, we can see the original probability density function and how it is estimated by the kernel density. Note also how relevant is bandwidth selection. Bandwidths that are too low or too high will not yield an appropriate estimation of the density.
 
 <div class="row img-spacing">
-    <img src="/img-post/k_density-wide-large.jpg" class="enlarge-img img-position" alt="Zoomed frames for kernel density">
+    <img src="/img-post/k_density-wide-large.jpg" class="enlarge-img img-position img-fluid" alt="Zoomed frames for kernel density">
 </div>
 
 
