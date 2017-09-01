@@ -83,6 +83,10 @@
     font-size: 14px;
   }
 
+  .post-content h2 {
+    font-size: 30px;
+  }
+
 }
 
 @media (min-width: 992px) {
