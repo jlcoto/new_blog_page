@@ -6,7 +6,7 @@ tags: [d3.js, visualization]
 image: /img-post/dashboard_show-large.gif
 ---
 
-In the last part of the [previous post](http://jose-coto.com/resp-dashboard) I laid the ground work for our responsive dashboard. In particular, I used CSS's flexbox to build a grid layer. In this post the objective will be to fill the grid with our D3.js visualizations. If you want to see the final product, check it out [here](https://htmlpreview.github.io/?https://github.com/jlcoto/visualizations/blob/master/dashboard/dashboard_final/index.html). To see how the layout changes, be sure to resize your window. Here is a small preview:
+In the last part of the [previous post](http://jose-coto.com/resp-dashboard) I laid the ground work for our responsive dashboard. In particular, I used CSS's flexbox to build a grid layer. In this post the objective will be to fill the grid with our D3.js visualizations. If you want to see the final product, check it out [here](https://cdn.rawgit.com/jlcoto/visualizations/2476023a/dashboard/dashboard_final/index.html). To see how the layout changes, be sure to resize your window. Here is a small preview:
 
 <div class="row img-spacing">
   <img src="/img-post/dashboard_show-large.gif" class="enlarge-img img-position img-fluid" alt="Dashboard resizing">
