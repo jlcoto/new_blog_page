@@ -3,14 +3,15 @@ layout: post
 title:  "Plotting Earthquakes with D3.js + Leaflet"
 date:   2016-11-23 00:24:55 +0100
 tags: [d3.js, leaflet, visualization]
+image: /img-post/earthquake_plot.jpg
 ---
 
 Last time, I wrote about how folium allows us to seamlessly integrate leaflet maps for visualization. This time, I wanted to challenge myself a bit more. I decided to use d3.js for visualizing earthquakes again. As I have pointed out in a [previous post](http://jose-coto.com/outlier-visualization), d3.js is a highly flexible JavaScript library that allows you to create visually appealing and interactive visualizations. This comes at a cost: learning how to work with it can take a while.
 
 I am still learning d3.js, and thought it would be a good idea to share with you my trial and error process (admittedly, sometimes more error than trial) when doing the earthquake visualization. Here is the visualization. I later go through some of the steps I took to complete it.
 
-<div class="map_plotting_big">
-    <iframe src="http://htmlpreview.github.io/?https://github.com/jlcoto/Udacity/blob/master/earthquake_visualization/index_final.html"  height="750" width="960" allowfullscreen="" frameborder="0">
+<div class="map-plotting-big">
+    <iframe src="https://cdn.rawgit.com/jlcoto/Udacity/7006b11b/earthquake_visualization/index_final.html"  height="750" width="960" allowfullscreen="" frameborder="0">
     </iframe>
 </div>
 
