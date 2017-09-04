@@ -205,13 +205,11 @@ a:visited {
 }
 
 
-
 /*Modal*/
 .modal-title{
 	margin: 0px auto;
 	color: #5EB4CF;
 }
-
 
 /*Footer*/
 
@@ -252,4 +250,23 @@ a:visited {
 	text-decoration: none;
 	color: #5EB4CE;
 }
+
+/*About*/
+
+.personal-pic {
+	border-radius: 50%;
+	margin-bottom: 50px;
+}
+
+.about-content {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+
+
+
+
+
+
 
