@@ -116,7 +116,7 @@ With the d3.select(window).on('resize', foo()) function I was able to keep track
 
 ### Conclusions
 
-This project allowed me to get more acquainted with D3.js. I must admit, trying to get the tooltips right was more challenging than I imagined. I am open to your thoughts and your recommendation on how to make the tooltip location process less painful. As usual, you can check the code in [my repo](https://github.com/jlcoto/visualizations/tree/master/dashboard/dashboard_final) and have fun with the dashboard [here](https://htmlpreview.github.io/?https://github.com/jlcoto/visualizations/blob/master/dashboard/dashboard_final/index.html).
+This project allowed me to get more acquainted with D3.js. I must admit, trying to get the tooltips right was more challenging than I imagined. I am open to your thoughts and your recommendation on how to make the tooltip location process less painful. As usual, you can check the code in [my repo](https://github.com/jlcoto/visualizations/tree/master/dashboard/dashboard_final) and have fun with the dashboard [here](https://cdn.rawgit.com/jlcoto/visualizations/2476023a/dashboard/dashboard_final/index.html).
 
 
 
