@@ -254,8 +254,10 @@ a:visited {
 /*About*/
 
 .personal-pic {
+	height: 200px;
+	width: 200px;
 	border-radius: 50%;
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 }
 
 .about-content {
