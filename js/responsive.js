@@ -30,3 +30,16 @@ $(function() {
 			$('.enlargeImageModalSource').attr('alt', $(this).attr('alt'));
 		});
 });
+
+
+// Showing project descriptions
+
+$(".proj-content").mouseover(function(){
+	$(".proj-title").css({"margin-top": "50px"})
+	$(".proj-description").fadeIn();
+})
+
+$(".proj-content").mouseleave(function(){
+	$(".proj-description").hide();
+	$(".proj-title").css({"margin-top": "250px"})
+})
