@@ -36,6 +36,7 @@ $(function() {
 
 var projects = [
 	{
+		id: "testing",
 		title: "A/B Testing",
 		image: "url(/img-layout/a_b_testing_background.png)",
 		description: ["Designed an A/B test, including which metrics to measure and how long the test should be run.",
@@ -43,25 +44,13 @@ var projects = [
 					"Recommended a decision, and proposed a follow-up experiment."],
 		skills: "Pandas, Matplotlib, Jupyter Notebook."
 	}, {
-		title:,
-		image:,
-		description: [],
-		skills:
-	}, {
-		title:,
-		image:,
-		description: [],
-		skills:
-	}, {
-		title:,
-		image:,
-		description: [],
-		skills:
-	}, {
-		title:,
-		image:,
-		description: [],
-		skills:
+		id: "earthquake",
+		title: "Earthquakes visualization",
+		image: "url(/img-post/earthquake_plot.jpg)",
+		description: ["Developed visualization where users can fully interact with geographical and temporal features of earthquakes.",
+					"Successfully integrated D3.js and Leaflet to produce animations and transitions.",
+					"Project featured by Data Science Weekly."],
+		skills: "D3.js, Leaflet, GeoPandas, Pandas, Python."
 	},
 ];
 
@@ -78,7 +67,7 @@ projects.forEach(function (entry) {
 	});
 
 	$(".projects").append("<div class='proj-content'> \
-		<div class='proj-background'> \
+		<div class='proj-background' id="+entry.id+ "> \
 		<div class='title-pos text-right'> \
 			<span class='proj-title'>" + entry.title + "</span> \
 		</div> \
@@ -88,7 +77,7 @@ projects.forEach(function (entry) {
 		"</div> \
 		</div>")
 
-	$(".proj-background").css("background", entry.image)
+	$("#" +entry.id ).css("background", entry.image)
 })
 
 
