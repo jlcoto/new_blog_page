@@ -70,7 +70,15 @@ var projects = [
 					"Created more than 20 visualizations to understand the data. Analyzed the conditional relationships of deaths of earthquakes given its magnitude and regime type/gdp per capita."],
 		skills: "R, R Studio, ggplot, Python, pandas, GeoPandas."
 	},
-
+	{
+		id: "data-wrangling",
+		title: "Data Wrangling SQL and Pandas",
+		image: "url(/img-layout/wrangling_data.png)",
+		description: ["Parsed 140 Mb XML document to obtain relevant data.",
+					"Cleaned, audited and corrected more than 2500 registries.",
+					"Stored cleaned data in a SQL database, performed queries and generated plots. Created map plots to inspect georeferenced data."],
+		skills: "Python, SQL, XML parsing, regular expressions, Pandas, BaseMap, GeoPandas."
+	},
 ];
 
 
