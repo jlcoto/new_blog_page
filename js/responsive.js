@@ -52,6 +52,15 @@ var projects = [
 					"Project featured by Data Science Weekly."],
 		skills: "D3.js, Leaflet, GeoPandas, Pandas, Python."
 	},
+	{
+		id: "machine-learning",
+		title: "Machine Learning",
+		image: "url(/img-layout/machine_learning.png)",
+		description: ["Identified which Enron employees are more likely to have committed fraud using machine learning and public Enron financial and email data.",
+					"Trained and tested different algorithms and used feature selection techniques.",
+					"Tunned algorithms’ parameters to improve original results."],
+		skills: "Python, Scikit-learn, Pandas, machine learning."
+	},
 ];
 
 
