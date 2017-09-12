@@ -61,6 +61,16 @@ var projects = [
 					"Tunned algorithms’ parameters to improve original results."],
 		skills: "Python, Scikit-learn, Pandas, machine learning."
 	},
+	{
+		id: "exploratory-r",
+		title: "Exploratory Analysis R",
+		image: "url(/img-layout/exploratory_r.png)",
+		description: ["Cleaned, merged and analyzed data on consequences of earthquake in the world from the 1900s.",
+					"Created a notebook with clear steps for getting, cleaning and merging the data from different sources. Created a codebook with all the variables included in final dataset.",
+					"Created more than 20 visualizations to understand the data. Analyzed the conditional relationships of deaths of earthquakes given its magnitude and regime type/gdp per capita."],
+		skills: "R, R Studio, ggplot, Python, pandas, GeoPandas."
+	},
+
 ];
 
 
