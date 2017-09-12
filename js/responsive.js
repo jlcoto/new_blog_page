@@ -79,6 +79,15 @@ var projects = [
 					"Stored cleaned data in a SQL database, performed queries and generated plots. Created map plots to inspect georeferenced data."],
 		skills: "Python, SQL, XML parsing, regular expressions, Pandas, BaseMap, GeoPandas."
 	},
+	{
+		id: "exploratory-pandas",
+		title: "Exploratory Analysis Pandas",
+		image: "url(/img-layout/exploratory_analysis_pandas.png)",
+		description: ["Analyzed Titanic Data.",
+					"Studied relationships between variables and created visualizations.",
+					"Answered questions about the variables related to surviving the Titanic."],
+		skills: "Python, IPython, Pandas."
+	},
 ];
 
 
