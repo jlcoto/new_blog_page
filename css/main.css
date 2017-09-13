@@ -267,6 +267,24 @@ a:visited {
 
 /*Project */
 
+
+
+.proj-content a {
+	text-decoration: none !important;
+}
+
+.proj-content a:active {
+	text-decoration: none !important;
+}
+
+.proj-content a:hover {
+	text-decoration: none !important;
+}
+
+.proj-content a:visited {
+	text-decoration: none !important;
+}
+
 .proj-content {
 	border: 1px solid rgba(164, 164, 164, 0.3);
 	/*font-family: 'Roboto', sans-serif;*/

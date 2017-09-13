@@ -37,6 +37,7 @@ $(function() {
 var projects = [
 	{
 		id: "testing",
+		link: "https://github.com/jlcoto/Udacity/tree/master/a_b_testing",
 		title: "A/B Testing",
 		image: "url(/img-layout/a_b_testing_background.png)",
 		description: ["Designed an A/B test, including which metrics to measure and how long the test should be run.",
@@ -45,6 +46,7 @@ var projects = [
 		skills: "Pandas, Matplotlib, Jupyter Notebook."
 	}, {
 		id: "earthquake",
+		link: "https://github.com/jlcoto/Udacity/tree/master/earthquake_visualization",
 		title: "Earthquakes visualization",
 		image: "url(/img-layout/earthquake_plot.png)",
 		description: ["Developed visualization where users can fully interact with geographical and temporal features of earthquakes.",
@@ -54,6 +56,7 @@ var projects = [
 	},
 	{
 		id: "machine-learning",
+		link: "https://github.com/jlcoto/Udacity/tree/master/machine_learning_project",
 		title: "Machine Learning",
 		image: "url(/img-layout/machine_learning.png)",
 		description: ["Identified which Enron employees are more likely to have committed fraud using machine learning and public Enron financial and email data.",
@@ -63,6 +66,7 @@ var projects = [
 	},
 	{
 		id: "exploratory-r",
+		link: "https://github.com/jlcoto/Udacity/tree/master/earthquake_project",
 		title: "Exploratory Analysis R",
 		image: "url(/img-layout/exploratory_r.png)",
 		description: ["Cleaned, merged and analyzed data on consequences of earthquake in the world from the 1900s.",
@@ -72,6 +76,7 @@ var projects = [
 	},
 	{
 		id: "data-wrangling",
+		link: "https://github.com/jlcoto/Udacity/tree/master/data_wrangling/Open_Street_project/Open_street_lima_project",
 		title: "Data Wrangling SQL and Pandas",
 		image: "url(/img-layout/wrangling_data.png)",
 		description: ["Parsed 140 Mb XML document to obtain relevant data.",
@@ -81,6 +86,7 @@ var projects = [
 	},
 	{
 		id: "exploratory-pandas",
+		link: "https://github.com/jlcoto/Udacity/tree/master/pandas_wrangling",
 		title: "Exploratory Analysis Pandas",
 		image: "url(/img-layout/exploratory_analysis_pandas.png)",
 		description: ["Analyzed Titanic Data.",
@@ -90,6 +96,7 @@ var projects = [
 	},
 	{
 		id: "stats-python",
+		link: "https://github.com/jlcoto/Udacity/tree/master/statistics/stroop_task",
 		title: "Statistical Analysis with Python",
 		image: "url(/img-layout/stats_python.png)",
 		description: ["Analyzed validity of stroop effect.",
@@ -111,7 +118,7 @@ projects.forEach(function (entry) {
 		projDescription += "<li>" + pointer + "</li>"
 	});
 
-	$(".projects").append("<div class='proj-content'> \
+	$(".projects").append("<div class='proj-content'> <a href=" + entry.link +" target='#'> \
 		<div class='proj-background' id="+entry.id+ "> \
 		<div class='title-pos text-right'> \
 			<span class='proj-title'>" + entry.title + "</span> \
@@ -120,7 +127,7 @@ projects.forEach(function (entry) {
 			<ul class='proj-bullet-description'>" + projDescription + "</ul> <span class='skills'> Skills: "
 			+ entry.skills + "</span> \
 		</div> \
-		</div>")
+		</a></div>")
 
 	$("#" +entry.id ).css("background", entry.image)
 })
