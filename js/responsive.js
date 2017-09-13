@@ -46,7 +46,7 @@ var projects = [
 	}, {
 		id: "earthquake",
 		title: "Earthquakes visualization",
-		image: "url(/img-post/earthquake_plot.jpg)",
+		image: "url(/img-layout/earthquake_plot.png)",
 		description: ["Developed visualization where users can fully interact with geographical and temporal features of earthquakes.",
 					"Successfully integrated D3.js and Leaflet to produce animations and transitions.",
 					"Project featured by Data Science Weekly."],
@@ -131,7 +131,7 @@ projects.forEach(function (entry) {
 // Showing project descriptions
 
 $(".proj-content").mouseover(function(){
-	$(".proj-title").css({"margin-top": "50px"})
+	$(".proj-title").css({"margin-top": "30px"})
 	$(".proj-description").fadeIn();
 })
 
@@ -139,3 +139,7 @@ $(".proj-content").mouseleave(function(){
 	$(".proj-description").hide();
 	$(".proj-title").css({"margin-top": "250px"})
 })
+
+
+
+

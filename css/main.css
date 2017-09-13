@@ -277,28 +277,29 @@ a:visited {
 }
 
 .proj-background {
-	height: 350px;
 	width: 300px;
-	background-repeat: no-repeat;
-	background-size: cover;
+	height: 350px;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
 }
 
 .proj-title {
 	color: #F4F5F6;
-	background-color: #95D4E7;
-	padding: 5px 10px;
+	background-color: #097A9B;
+	padding: 0px 10px;
 	border-radius: 10px;
 	font-style: italic;
+	font-size: 15px;
 	display: inline-block;
 	margin-top: 250px;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 	margin-right: 20px;
 }
 
 .proj-description {
 	border-style: solid;
 	border-color: #95D4E7;
-	border-width: 3px 0px 0px 0px;
+	border-width: 3px 0px 3px 0px;
 	display: none;
 	color: #2C89A5;
 	background-color: #F6F6F6;
