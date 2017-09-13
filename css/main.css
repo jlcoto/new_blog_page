@@ -273,6 +273,7 @@ a:visited {
 	font-family: 'Assistant', sans-serif;
 	margin-left: 5%;
 	margin-bottom: 30px;
+	overflow: scroll;
 }
 
 .proj-background {

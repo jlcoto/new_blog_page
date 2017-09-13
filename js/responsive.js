@@ -88,6 +88,15 @@ var projects = [
 					"Answered questions about the variables related to surviving the Titanic."],
 		skills: "Python, IPython, Pandas."
 	},
+	{
+		id: "stats-python",
+		title: "Statistical Analysis with Python",
+		image: "url(/img-layout/stats_python.png)",
+		description: ["Analyzed validity of stroop effect.",
+					"Conducted exploratory analysis.",
+					"Used different visualizations to understand the stroop effect."],
+		skills: "Python, IPython, Pandas."
+	},
 ];
 
 
