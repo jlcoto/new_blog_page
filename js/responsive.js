@@ -117,9 +117,9 @@ projects.forEach(function (entry) {
 			<span class='proj-title'>" + entry.title + "</span> \
 		</div> \
 		<div class='proj-description'> \
-			<ul class='proj-bullet-description'>" + projDescription + "</ul>"
-			+ entry.skills +
-		"</div> \
+			<ul class='proj-bullet-description'>" + projDescription + "</ul> <span class='skills'> Skills: "
+			+ entry.skills + "</span> \
+		</div> \
 		</div>")
 
 	$("#" +entry.id ).css("background", entry.image)
@@ -130,14 +130,14 @@ projects.forEach(function (entry) {
 
 // Showing project descriptions
 
-$(".proj-content").mouseover(function(){
-	$(".proj-title").css({"margin-top": "30px"})
-	$(".proj-description").fadeIn();
+$(".proj-content").mouseover(function(e){
+	$(this).find(".proj-title").css({"margin-top": "30px"});
+	$(this).find(".proj-description").fadeIn();
 })
 
-$(".proj-content").mouseleave(function(){
+$(".proj-content").mouseleave(function(e){
 	$(".proj-description").hide();
-	$(".proj-title").css({"margin-top": "250px"})
+	$(".proj-title").css({"margin-top": "250px"});
 })
 
 
