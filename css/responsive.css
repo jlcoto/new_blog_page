@@ -13,7 +13,9 @@
   .personal-pic {
     margin-bottom: 30px;
   }
+
 }
+
 
 @media (min-width: 550px) {
 
@@ -26,6 +28,9 @@
     margin-bottom: 30px;
   }
 
+  .image-position {
+    margin: 0px auto;
+  }
 
 }
 
@@ -98,6 +103,7 @@
   .personal-pic-vert{
     margin: auto 0px;
   }
+
 
 }
 

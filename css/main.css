@@ -286,53 +286,46 @@ a:visited {
 }
 
 .proj-content {
-	border: 1px solid rgba(164, 164, 164, 0.3);
 	/*font-family: 'Roboto', sans-serif;*/
 	font-family: 'Assistant', sans-serif;
-	margin-left: 5%;
-	margin-bottom: 30px;
-	overflow: scroll;
+	color: black;
+	line-height: 1.5;
+
 }
 
-.proj-background {
-	width: 300px;
-	height: 350px;
-	background-repeat: no-repeat !important;
-	background-size: cover !important;
+.project {
+	border: 1px solid rgba(164, 164, 164, 0.3);
+	padding: 10px 10px;
+	margin-top: 10px;
+	border-radius: 10px;
 }
 
 .proj-title {
+	font-family: 'Assistant', sans-serif;
 	color: #F4F5F6;
-	background-color: #097A9B;
+	background-color: #5EB4CE;
 	padding: 0px 10px;
+	margin-left: 25px;
 	border-radius: 10px;
 	font-style: italic;
 	font-size: 15px;
 	display: inline-block;
-	margin-top: 250px;
-	margin-bottom: 50px;
-	margin-right: 20px;
 }
 
+
+
 .proj-description {
-	border-style: solid;
-	border-color: #95D4E7;
-	border-width: 3px 0px 3px 0px;
-	display: none;
-	color: #2C89A5;
-	background-color: #F6F6F6;
 	line-height: 1.5;
 	font-size: 16px;
-	padding: 5px 10px;
+	padding: 20px 5px 0px 5px;
 }
 
 .proj-bullet-description {
 	list-style: none;
-	margin-left: -30px;
 }
 
 .proj-bullet-description li:before  {
-  background: #2C89A5;
+  background: black;
   content: "";
   display: block;
   float: left;
@@ -343,7 +336,9 @@ a:visited {
 }
 
 .skills {
+	margin-top: 0px;
 	font-style: italic;
+	font-size: 16px;
 }
 
 
