@@ -312,8 +312,6 @@ a:visited {
 	display: inline-block;
 }
 
-
-
 .proj-description {
 	line-height: 1.5;
 	font-size: 16px;
@@ -345,6 +343,32 @@ a:visited {
 	font-size: 14px;
 	font-style: italic;
 }
+
+
+/*Contact*/
+
+.contact {
+	font-family: 'Assistant', sans-serif;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
