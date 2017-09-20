@@ -129,7 +129,8 @@ projects.forEach(function (entry, index) {
 				<ul class='proj-description proj-bullet-description'>"
 					+ projDescription +
 				"</ul>\
-				<div class='skills'> Skills:" + entry.skills +"</div>\
+				<div class='skills'> Skills: " + entry.skills +"</div>\
+				<span class='proj-link'>* More details in  <a href="+ entry.link+ " target=#>repo</a>.</span> \
 			</div>\
 			</div> \
 			</div>"
@@ -147,6 +148,7 @@ projects.forEach(function (entry, index) {
 					+ projDescription +
 				"</ul>\
 				<div class='skills'> Skills:" + entry.skills +"</div>\
+				<span class='proj-link'>* More details in  <a href="+ entry.link+ " target=#>repo</a>.</span> \
 			</div> \
 			</div> \
 			</div> \

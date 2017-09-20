@@ -269,19 +269,19 @@ a:visited {
 
 
 
-.proj-content a {
+.project a {
 	text-decoration: none !important;
 }
 
-.proj-content a:active {
+.project a:active {
 	text-decoration: none !important;
 }
 
-.proj-content a:hover {
+.project a:hover {
 	text-decoration: none !important;
 }
 
-.proj-content a:visited {
+.project a:visited {
 	text-decoration: none !important;
 }
 
@@ -339,6 +339,11 @@ a:visited {
 	margin-top: 0px;
 	font-style: italic;
 	font-size: 16px;
+}
+
+.proj-link {
+	font-size: 14px;
+	font-style: italic;
 }
 
 
