@@ -352,8 +352,33 @@ a:visited {
 	font-size: 20px;
 }
 
+/*Pagination*/
+
+.paginator {
+	text-align: center;
+}
+
+.pages {
+	background-color:#F6F6F6;
+	color: #46BFE4;
+	padding: 4px 10px;
+	border-radius: 15px;
+}
 
 
+.pages a {
+	color: #3796B3;
+	text-decoration: none;
+}
+
+
+.pages a:active {
+	text-decoration: black;
+}
+
+.paginator a:visited {
+	color: black;
+}
 
 
 

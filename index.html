@@ -6,21 +6,22 @@ layout: default
 
 
 	<div class="central-pic">
-		<img class="logo-pic" src="img-layout/central_img-small.jpg" srcset="img-layout/central_img-extra-small.jpg 400w, img-layout/central_img-small.jpg 548w, img-layout/central_img-medium.jpg 768w, img-layout/central_img-large.jpg 992w,
-		img-layout/central_img-extra-large.jpg 1200w"
+		<img class="logo-pic" src="{{ site.baseurl }}/img-layout/central_img-small.jpg" srcset="{{ site.baseurl }}/img-layout/central_img-extra-small.jpg 400w, {{ site.baseurl }}/img-layout/central_img-small.jpg 548w, {{ site.baseurl }}/img-layout/central_img-medium.jpg 768w, {{ site.baseurl }}/img-layout/central_img-large.jpg 992w,
+		{{ site.baseurl }}/img-layout/central_img-extra-large.jpg 1200w"
 		sizes="100vw"
 		alt="Central pic Jose Coto's web page">
 	</div>
   <div class="container">
   <ul class="post-list">
-    {% for post in site.posts %}
+
+    {% for post in paginator.posts %}
 
         <li class="row post-container">
 
         <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
 			<div class="col-md-4 post-image" {% if post.image %} style="background-image: url('{{ post.image }}');" {% endif %}>
 			</div>
-			   <div class="col-md-8 ">
+			   <div class="col-md-8">
         		<div class="post-text">
 
         		  <div><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
@@ -31,9 +32,39 @@ layout: default
             </div>
         	</div>
       </li>
-
     {% endfor %}
-  </ul>
+    </ul>
+
+
+  <div class="row paginator">
+      <div class="col-md-12">
+      <span class="pages">
+      {% if paginator.total_pages > 1 %}
+            {% if paginator.previous_page %}
+              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+            {% else %}
+              <span>&laquo; Prev</span>
+            {% endif %}
+
+            {% for page in (1..paginator.total_pages) %}
+              {% if page == paginator.page %}
+                <em>{{ page }}</em>
+              {% elsif page == 1 %}
+                <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+              {% else %}
+                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+              {% endif %}
+            {% endfor %}
+
+            {% if paginator.next_page %}
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+            {% else %}
+              <span>Next &raquo;</span>
+            {% endif %}
+        {% endif %}
+        </span>
+    </div>
+    </div>
 </div>
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 

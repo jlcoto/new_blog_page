@@ -8,13 +8,17 @@
 # Site settings
 title: José Coto
 email: jcoto.contact@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+description: "José Coto - Data Blog "
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: jcoto
+github_username:  jlcoto
+paginate: 5
+gems: [jekyll-paginate]
 
+
+permalink: /:title
 
 # Build settings
 markdown: kramdown
