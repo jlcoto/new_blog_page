@@ -365,20 +365,16 @@ a:visited {
 	border-radius: 15px;
 }
 
-
 .pages a {
 	color: #3796B3;
 	text-decoration: none;
 }
 
-
 .pages a:active {
 	text-decoration: black;
 }
 
-.paginator a:visited {
-	color: black;
-}
+
 
 
 
