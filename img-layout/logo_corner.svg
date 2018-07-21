@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="115px" height="100px" viewBox="0 0 115 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="100px" height="101px" viewBox="0 0 100 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
-    <title>Group</title>
+    <title>logo_corner</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="78.5976562%" id="radialGradient-1">
             <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
             <stop stop-color="#1C5566" stop-opacity="0.48" offset="100%"></stop>
         </radialGradient>
-        <rect id="path-2" x="0" y="0" width="100" height="100" rx="31"></rect>
-        <text id="text-3" font-family="FZLTZHK--GBK1-0, Lantinghei SC" font-size="42" font-weight="500" letter-spacing="-2.474309" fill="#FFFFFF">
-            <tspan x="22.2125902" y="64">JC</tspan>
-        </text>
-        <filter x="-86.0%" y="-84.5%" width="275.4%" height="272.4%" filterUnits="objectBoundingBox" id="filter-4">
-            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="16.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" transform="translate(5.000000, 0.000000)">
-            <g id="Rectangle-2">
-                <use fill="#71D6F5" xlink:href="#path-2"></use>
-                <use fill="url(#radialGradient-1)" xlink:href="#path-2"></use>
+        <g id="logo_corner" transform="translate(0.000000, 0.090090)">
+            <g id="Rectangle-2" fill-rule="nonzero">
+                <g id="path-2-link" fill="#71D6F5">
+                    <rect id="path-2" x="0" y="0" width="100" height="100" rx="31"></rect>
+                </g>
+                <g id="path-2-link" fill="url(#radialGradient-1)">
+                    <rect id="path-2" x="0" y="0" width="100" height="100" rx="31"></rect>
+                </g>
             </g>
-            <g id="JC" fill-opacity="1" fill="#FFFFFF">
-                <use filter="url(#filter-4)" xlink:href="#text-3"></use>
-                <use xlink:href="#text-3"></use>
+            <g id="JC" transform="translate(23.000000, 31.000000)" fill="#FFFDFD">
+                <path d="M17.5875902,1.3359375 L22.6735277,1.3359375 L22.6735277,23.484375 C22.7829032,31.5781655 19.2282513,35.570313 12.0094652,35.4609375 C5.22818129,35.570313 1.45478153,32.070348 0.6891527,24.9609375 L5.6110277,23.6484375 C5.82977879,28.8984637 7.90788301,31.4687505 11.8454027,31.359375 C15.7829224,31.4687505 17.6969657,28.7890898 17.5875902,23.3203125 L17.5875902,1.3359375 Z M58.2750902,10.8515625 L53.1891527,12.1640625 C51.8766461,7.78904063 48.9235507,5.49218859 44.3297777,5.2734375 C37.8766204,5.71093969 34.4313424,10.031209 33.9938402,18.234375 C34.3219668,26.437541 37.7125579,30.8124973 44.1657152,31.359375 C49.4157414,31.2499995 52.5875847,28.4062779 53.6813402,22.828125 L58.7672777,24.3046875 C57.1266445,31.7422247 52.2595057,35.4609375 44.1657152,35.4609375 C34.2125404,34.9140598 28.9625929,29.2266166 28.4157152,18.3984375 C28.9625929,7.35150727 34.2672274,1.50000328 44.3297777,0.84375 C51.3298127,1.06250109 55.9782037,4.39840523 58.2750902,10.8515625 Z"></path>
             </g>
         </g>
     </g>
