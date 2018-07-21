@@ -373,6 +373,10 @@ a:visited {
 	text-decoration: black;
 }
 
+#disqus_thread {
+    margin-left: 16%;
+    margin-right: 16%;
+}
 
 
 
